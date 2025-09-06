@@ -8,6 +8,8 @@ import Profile from './components/Profile/Profile';
 import SearchPage from './components/SearchPage/SearchPage';
 import LoginPage from './components/LoginPage/LoginPage';
 import RegisterPage from './components/RegisterPage/RegisterPage';
+import DetailsPage from './components/DetailsPage/DetailsPage';
+import ProfilePage from './components/Profile/Profile';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
           <Route path="/app/profile" element={<Profile/>} />
           <Route path="/app/search" element={<SearchPage/>} />
           <Route path="/app/login" element={<LoginPage/>} />
+          <Route path="/app/profile" element={<ProfilePage/>} />
           <Route path="/app/register" element={<RegisterPage />} />
+          <Route path="/app/product/:productId" element={<DetailsPage/>} />
         </Routes>
         </>
   );
